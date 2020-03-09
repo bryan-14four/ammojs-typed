@@ -18,6 +18,9 @@ declare module Ammo {
         setDebugMode(debugMode: number): void;
         getDebugMode(): number;
     }
+    class btTransformUtil {
+        calculateVelocity(from: btTransform, to: btTransform, timeStep: number, linVel: btVector3, angVel: btVector3): void;
+    }
     class btVector3 {
         constructor();
         constructor(x: number, y: number, z: number);

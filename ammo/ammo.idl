@@ -21,6 +21,10 @@ interface DebugDrawer {
   [Const] long getDebugMode();
 };
 
+interface btTransformUtil {
+  void calculateVelocity([Ref] btTransform from, [Ref] btTransform to, float timeStep, [Ref] btVector3 linVel, [Ref] btVector3 angVel);
+};
+
 interface btVector3 {
   void btVector3();
   void btVector3(float x, float y, float z);
