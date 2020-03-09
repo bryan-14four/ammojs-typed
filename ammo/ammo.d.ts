@@ -80,6 +80,7 @@ export declare module Ammo {
         op_div(s: number): btQuaternion;
     }
     class btMatrix3x3 {
+        constructor();
         constructor(q: btQuaternion);
         setEulerZYX(ex: number, ey: number, ez: number): void;
         getRotation(q: btQuaternion): void;
